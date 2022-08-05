@@ -24,3 +24,8 @@ python3 -V
 ```sh
 pip3 install numpy matplotlib pandas seaborn scikit-learn requests pillow
 ```
+
+Run VS code (and install it if missing) from the current directory:
+```sh
+code .
+```
