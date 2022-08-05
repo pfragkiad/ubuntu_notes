@@ -1,4 +1,12 @@
 # ubuntu_notes
+## Ensure gcc is installed
+```sh
+sudo apt install build-essential
+
+#or some more stuff altogether
+sudo apt install build-essential libssl-dev libffi-dev python-dev
+```
+
 ## Install pip on Ubuntu 22
 
 Classic update before doing anythin:
@@ -23,6 +31,21 @@ python3 -V
 ...and some must packages:
 ```sh
 pip3 install numpy matplotlib pandas seaborn scikit-learn requests pillow
+```
+
+To proceed installing an environment write the following (`venv` is part of the standard Python 3 library):
+```sh
+sudo apt install -y python3-venv
+
+#make a directory
+mkdir environments
+cd environments
+
+#create an envinronment (it will create a directory)
+python3 -m venv my_env
+
+#to activate environment
+source my_env/bin/activate
 ```
 
 ## WSL specific
