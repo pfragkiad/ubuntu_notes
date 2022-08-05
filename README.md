@@ -7,7 +7,7 @@ sudo apt install build-essential
 sudo apt install build-essential libssl-dev libffi-dev python-dev
 ```
 
-## Install pip on Ubuntu 22
+## Python 3 stuff
 
 Classic update before doing anythin:
 ```sh
