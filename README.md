@@ -10,5 +10,18 @@ Python3 is already installed. Install pip:
 ```sh
 sudo apt install python3-pip
 # verify pip3
+```
+
+Check versions:
+```sh
 pip3 --version
+#or
+pip3 -V
+
+python3 -V
+```
+
+...and some must packages:
+```sh
+pip3 install numpy matplotlib pandas seaborn scikit-learn requests pillow
 ```
