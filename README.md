@@ -9,7 +9,6 @@ sudo apt update && sudo apt upgrade
 Python3 is already installed. Install pip:
 ```sh
 sudo apt install python3-pip
-# verify pip3
 ```
 
 Check versions:
