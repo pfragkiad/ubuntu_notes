@@ -46,6 +46,9 @@ python3 -m venv my_env
 
 #to activate environment
 source my_env/bin/activate
+
+#to leave the environment
+deactivate
 ```
 
 ## WSL specific
