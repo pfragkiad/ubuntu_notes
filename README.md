@@ -2,7 +2,7 @@
 ## Install pip on Ubuntu 22
 
 Classic update before doing anythin:
-```bash
+```sh
 sudo apt update && sudo apt upgrade
 ```
 
