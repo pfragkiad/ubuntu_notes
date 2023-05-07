@@ -64,3 +64,8 @@ wsl -l -v
 ```sh
 wsl --set-version Ubuntu-22.04 2
 ```
+# Mount iso (with greek paths)
+
+```bash
+genisoimage -o cd.iso -J -R -l .
+```
