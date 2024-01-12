@@ -64,6 +64,12 @@ wsl -l -v
 ```sh
 wsl --set-version Ubuntu-22.04 2
 ```
+
+Install nvidia cuda toolkit
+```sh
+sudo apt install nvidia-cuda-toolkit
+```
+
 # Mount iso (with greek paths)
 
 ```bash
