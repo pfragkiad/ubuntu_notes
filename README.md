@@ -231,7 +231,7 @@ Update pip
 ```sh
 pip3 install --update pip
 ```
-or
+or (note both fields should be `pip` not `pip3` here):
 ```sh
 python3 -m pip install --upgrade pip
 ```
