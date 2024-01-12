@@ -163,3 +163,55 @@ source ~/.profile
 ```bash
 genisoimage -o cd.iso -J -R -l .
 ```
+
+# Update Python
+
+Nice link:
+
+https://cloudbytes.dev/snippets/upgrade-python-to-latest-version-on-ubuntu-linux
+
+Add deadsnakes repository and update:
+
+```sh
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt upgdate -y
+```
+
+Check if the version is there:
+```console
+cliff@DESKTOP-TBDVVBV:~$ apt list | grep python3.12
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+idle-python3.12/jammy 3.12.1-1+jammy3 all
+libpython3.12-dbg/jammy 3.12.1-1+jammy3 amd64
+libpython3.12-dev/jammy 3.12.1-1+jammy3 amd64
+libpython3.12-minimal/jammy 3.12.1-1+jammy3 amd64
+libpython3.12-stdlib/jammy 3.12.1-1+jammy3 amd64
+libpython3.12-testsuite/jammy 3.12.1-1+jammy3 all
+libpython3.12/jammy 3.12.1-1+jammy3 amd64
+python3.12-dbg/jammy 3.12.1-1+jammy3 amd64
+python3.12-dev/jammy 3.12.1-1+jammy3 amd64
+python3.12-distutils/jammy 3.12.0~a1-1+jammy1 all
+python3.12-examples/jammy 3.12.1-1+jammy3 all
+python3.12-full/jammy 3.12.1-1+jammy3 amd64
+python3.12-gdbm-dbg/jammy 3.12.1-1+jammy3 amd64
+python3.12-gdbm/jammy 3.12.1-1+jammy3 amd64
+python3.12-lib2to3/jammy 3.12.1-1+jammy3 all
+python3.12-minimal/jammy 3.12.1-1+jammy3 amd64
+python3.12-tk-dbg/jammy 3.12.1-1+jammy3 amd64
+python3.12-tk/jammy 3.12.1-1+jammy3 amd64
+python3.12-venv/jammy 3.12.1-1+jammy3 amd64
+python3.12/jammy 3.12.1-1+jammy3 amd64
+```
+
+Then install the desired version (:
+
+```sh
+sudo apt install python3.12
+sudo apt-get install python3.12-venv
+```
+
+
+
+
