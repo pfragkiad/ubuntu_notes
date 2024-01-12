@@ -113,10 +113,19 @@ Fri Jan 12 14:51:54 2024
 ```
 
 Add HPC SDK (includes `nvfortran` compiler):
+
 https://developer.nvidia.com/hpc-sdk-downloads
 
-Default path for HPC SDK compilers is (check it after installation):
-/opt/nvidia/hpc_sdk/Linux_x86_64/23.11/compilers/bin
+Default path for HPC SDK compilers is shown below (check it after installation):
+
+```console
+cliff@DESKTOP-TBDVVBV:/opt/nvidia/hpc_sdk/Linux_x86_64/23.11/compilers/bin$ ls
+compute-sanitizer  localrc-lock  nsys-ui           nvc++       nvextract  nvunzip       pgcc        pgf95      pgzip
+cuda-gdb           makelocalrc   nv-nsight-cu-cli  nvcc        nvfortran  nvzip         pgcpuid     pgfortran  rcfiles
+cuda-memcheck      ncu           nvaccelerror      nvcpuid     nvprepro   pgaccelerror  pgcudainit  pgprepro   tools
+cuobjdump          ncu-ui        nvaccelinfo       nvcudainit  nvprof     pgaccelinfo   pgf77       pgsize
+localrc            nsys          nvc               nvdecode    nvsize     pgc++         pgf90       pgunzip
+```
 
 To add it to the `PATH` variable add the following line to `~/.profile`:
 ```bash
@@ -126,6 +135,7 @@ And reload the `PATH` variable with the following:
 ```sh
 source ~/.profile
 ```
+
 
 
 # Mount iso (with greek paths)
