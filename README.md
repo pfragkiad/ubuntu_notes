@@ -212,6 +212,13 @@ sudo apt install python3.12
 sudo apt-get install python3.12-venv
 ```
 
+Check alternatives:
+```sh
+sudo update-alternatives --config python3
+```
 
-
-
+Add alternatives 
+```sh
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 0
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1
+```
