@@ -205,7 +205,7 @@ python3.12-venv/jammy 3.12.1-1+jammy3 amd64
 python3.12/jammy 3.12.1-1+jammy3 amd64
 ```
 
-Then install the desired version (:
+Then install the desired version:
 
 ```sh
 sudo apt install python3.12
