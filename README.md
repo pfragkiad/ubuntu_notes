@@ -227,3 +227,11 @@ Remove alternative
 ```sh
 sudo update-alternatives --remove python3 /usr/bin/python3.12
 ```
+Update pip
+```sh
+pip3 install --update pip
+```
+or
+```sh
+python3 -m pip install --upgrade pip
+```
