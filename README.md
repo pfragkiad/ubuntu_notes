@@ -65,6 +65,8 @@ wsl -l -v
 wsl --set-version Ubuntu-22.04 2
 ```
 
+## WSL Cuda
+
 Install nvidia cuda toolkit:
 ```sh
 sudo apt install nvidia-cuda-toolkit
@@ -83,6 +85,31 @@ Copyright (c) 2005-2021 NVIDIA Corporation
 Built on Thu_Nov_18_09:45:30_PST_2021
 Cuda compilation tools, release 11.5, V11.5.119
 Build cuda_11.5.r11.5/compiler.30672275_0
+```
+
+Check NVIDIA driver:
+```console
+cliff@DESKTOP-TBDVVBV:~/cuda$ nvidia-smi
+Fri Jan 12 14:51:54 2024
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.36                 Driver Version: 546.33       CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3060 ...    On  | 00000000:01:00.0  On |                  N/A |
+| N/A   47C    P8              16W / 130W |    184MiB /  6144MiB |      5%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
 ```
 
 
