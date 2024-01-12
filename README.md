@@ -140,10 +140,21 @@ To add it to the `PATH` variable add the following line to `~/.profile`:
 ```bash
 PATH="/opt/nvidia/hpc_sdk/Linux_x86_64/23.11/compilers/bin:$PATH"
 ```
+Below the full version:
+```bash
+NVARCH=`uname -s`_`uname -m`
+NVCOMPILERS=/opt/nvidia/hpc_sdk
+MANPATH="$MANPATH:$NVCOMPILERS/$NVARCH/23.11/compilers/man"
+PATH="$NVCOMPILERS/$NVARCH/23.11/compilers/bin:$PATH"
+MODULEPATH="$NVCOMPILERS/modulefiles"
+```
+
+
 And reload the `PATH` variable with the following:
 ```sh
 source ~/.profile
 ```
+
 
 
 
