@@ -222,3 +222,8 @@ Add alternatives
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 0
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1
 ```
+
+Remove alternative
+```sh
+sudo update-alternatives --remove python3 /usr/bin/python3.12
+```
