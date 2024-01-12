@@ -112,6 +112,10 @@ Fri Jan 12 14:51:54 2024
 +---------------------------------------------------------------------------------------+
 ```
 
+Add HPC SDK (includes `nvfortran` compiler):
+
+https://developer.nvidia.com/hpc-sdk-downloads
+
 
 # Mount iso (with greek paths)
 
