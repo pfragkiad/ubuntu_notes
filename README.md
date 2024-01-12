@@ -65,10 +65,26 @@ wsl -l -v
 wsl --set-version Ubuntu-22.04 2
 ```
 
-Install nvidia cuda toolkit
+Install nvidia cuda toolkit:
 ```sh
 sudo apt install nvidia-cuda-toolkit
 ```
+
+Check cuda version:
+```sh
+nvcc --version
+```
+
+Example:
+```console
+cliff@DESKTOP-TBDVVBV:~$ nvcc --version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2021 NVIDIA Corporation
+Built on Thu_Nov_18_09:45:30_PST_2021
+Cuda compilation tools, release 11.5, V11.5.119
+Build cuda_11.5.r11.5/compiler.30672275_0
+```
+
 
 # Mount iso (with greek paths)
 
