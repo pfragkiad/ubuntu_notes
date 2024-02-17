@@ -235,3 +235,22 @@ or (note both fields should be `pip` not `pip3` here):
 ```sh
 python3 -m pip install --upgrade pip
 ```
+
+# Install dotnet
+
+Based on the guide of https://tecadmin.net/how-to-install-dotnet-core-on-ubuntu-22-04/
+
+## Check current os
+```sh
+cat /etc/os-release
+```
+
+Download and install MS package signing key and repo:
+
+```sh
+wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+
+
