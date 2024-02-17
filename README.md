@@ -251,6 +251,9 @@ Download and install MS package signing key and repo:
 wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
-
-
+If everything ok install the .NET SDK
+```sh
+sudo apt update
+sudo apt install -y dotnet-sdk-8.0
+```
 
