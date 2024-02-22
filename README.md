@@ -257,3 +257,11 @@ sudo apt update
 sudo apt install -y dotnet-sdk-8.0
 ```
 
+# Install ssh on Ubuntu
+
+```sh
+sudo apt install openssh-server
+sudo systemctl enable ssh
+sudo ufw allow ssh
+sudo systemctl start ssh
+```
