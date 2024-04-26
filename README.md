@@ -265,3 +265,8 @@ sudo systemctl enable ssh
 sudo ufw allow ssh
 sudo systemctl start ssh
 ```
+# See list of recent installs
+
+```sh
+grep " install " /var/log/dpkg.log
+```
