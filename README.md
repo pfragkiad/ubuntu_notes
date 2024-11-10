@@ -51,6 +51,23 @@ source my_env/bin/activate
 deactivate
 ```
 
+
+Export requirements
+
+```sh
+pip freeze > requirements.txt
+```
+
+Update requirements
+```sh
+pip install --upgrade -r requirements.txt
+```
+
+Check dependencies integrity
+```sh
+pip check
+```
+
 ## WSL specific
 Run VS code (and install it if missing) from the current directory:
 ```sh
@@ -251,7 +268,6 @@ Install requirements
 ```sh
 pip install -r requirements.txt
 ```
-
 
 Remove alternative
 ```sh
