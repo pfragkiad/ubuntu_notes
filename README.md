@@ -170,6 +170,7 @@ Nice link:
 
 https://cloudbytes.dev/snippets/upgrade-python-to-latest-version-on-ubuntu-linux
 
+
 Add deadsnakes repository and update:
 
 ```sh
