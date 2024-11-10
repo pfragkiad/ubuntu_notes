@@ -174,8 +174,9 @@ https://cloudbytes.dev/snippets/upgrade-python-to-latest-version-on-ubuntu-linux
 Add deadsnakes repository and update:
 
 ```sh
+sudo apt update && sudo apt upgrade -y
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt upgdate -y
+sudo apt update
 ```
 
 Check if the version is there:
@@ -189,21 +190,7 @@ libpython3.12-dbg/jammy 3.12.1-1+jammy3 amd64
 libpython3.12-dev/jammy 3.12.1-1+jammy3 amd64
 libpython3.12-minimal/jammy 3.12.1-1+jammy3 amd64
 libpython3.12-stdlib/jammy 3.12.1-1+jammy3 amd64
-libpython3.12-testsuite/jammy 3.12.1-1+jammy3 all
-libpython3.12/jammy 3.12.1-1+jammy3 amd64
-python3.12-dbg/jammy 3.12.1-1+jammy3 amd64
-python3.12-dev/jammy 3.12.1-1+jammy3 amd64
-python3.12-distutils/jammy 3.12.0~a1-1+jammy1 all
-python3.12-examples/jammy 3.12.1-1+jammy3 all
-python3.12-full/jammy 3.12.1-1+jammy3 amd64
-python3.12-gdbm-dbg/jammy 3.12.1-1+jammy3 amd64
-python3.12-gdbm/jammy 3.12.1-1+jammy3 amd64
-python3.12-lib2to3/jammy 3.12.1-1+jammy3 all
-python3.12-minimal/jammy 3.12.1-1+jammy3 amd64
-python3.12-tk-dbg/jammy 3.12.1-1+jammy3 amd64
-python3.12-tk/jammy 3.12.1-1+jammy3 amd64
-python3.12-venv/jammy 3.12.1-1+jammy3 amd64
-python3.12/jammy 3.12.1-1+jammy3 amd64
+
 ```
 
 Then install the desired version:
@@ -211,6 +198,9 @@ Then install the desired version:
 ```sh
 sudo apt install python3.12
 sudo apt-get install python3.12-venv
+
+sudo apt install python3.13
+sudo apt install python3.13-venv
 ```
 
 Check alternatives:
@@ -222,12 +212,53 @@ Add alternatives
 ```sh
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 0
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.13 3
+
 ```
+
+Fix pip
+
+```sh
+sudo apt remove --purge python3-apt
+sudo apt autoclean
+sido apt install python3-apt
+```
+
+Download and install pip (after fixing)
+
+```sh
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python3.13 get-pip.py
+```
+
+Create environment
+
+```sh
+python3 -m venv keftenv
+```
+
+Activate environment
+```sh
+source keftenv/bin/activate
+```
+
+Deactivate environment
+```sh
+deactivate
+```
+
+Install requirements
+```sh
+pip install -r requirements.txt
+```
+
 
 Remove alternative
 ```sh
 sudo update-alternatives --remove python3 /usr/bin/python3.12
 ```
+
+
 Update pip
 ```sh
 pip3 install --update pip
